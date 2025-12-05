@@ -14,14 +14,10 @@ build/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data files (too large for git)
-*.csv
+# Data files
 *.parquet
 *.pkl
 *.pickle
-
-# Keep specific data files if needed
-!data/hull-tactical-market-prediction/final/*.json
 
 # OS
 .DS_Store
