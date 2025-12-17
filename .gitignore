@@ -30,3 +30,12 @@ Thumbs.db
 
 # Logs
 *.log
+
+data/**
+!data/
+!data/intermediate/
+!data/transformer/
+!data/intermediate/train_2018_2025_final.csv
+!data/intermediate/train_no_missing_2007_2025_final.csv
+!data/transformer/train_transformer.csv
+!data/transformer/val_transformer.csv
