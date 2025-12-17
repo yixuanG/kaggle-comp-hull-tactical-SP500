@@ -1,6 +1,6 @@
 # Hull Tactical: Alpha Transformer + Tree Models + Trading Strategy
 
-This repository contains an end-to-end research and modeling pipeline for a tactical market prediction / allocation task.
+This repository contains an end-to-end research and modeling pipeline for a Kaggle market prediction allocation competition task: [Hull Tactical - Market Prediction](https://www.kaggle.com/competitions/hull-tactical-market-prediction/leaderboard)
 
 ## Competition Raw data
 
@@ -116,7 +116,7 @@ flowchart TB
   C1 --> E[Strategy layer<br/>TrendFollowingStrategy]
   D --> E
 
-  E --> F[Daily position<br/>allocation in [0, 2]]
+  E --> F[Daily position<br/>allocation in 0..2]
 ```
 
 ### Strategy Internals (high level)
