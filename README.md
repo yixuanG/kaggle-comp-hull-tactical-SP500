@@ -27,7 +27,7 @@ This project started from a practical observation: the competition metric is not
 
 See details in `tree+transformer_5.ipynb`
 
-![1765986911164](image/README/1765986911164.png)
+![](analysis/backtest.png)
 
 ## Iteration history
 
