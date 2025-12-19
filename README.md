@@ -36,12 +36,12 @@ The final system is the result of several iterations. The main driver behind the
 - **Version 0** — “Predict position directly” (2007–2024, linear + tree ensemble)
 
   - Trained linear models and tree models on 2007–2024, ensembled them, and predicted the position directly.
-  - Result: IC was mediocre and the signal was not stable enough to support consistent strategy improvements.
+  - Result: IC was mediocre and the prediction was not stable enough to support a valid position allocation.
 - **Version 1 — Dual-window training + window fusion (2007–2024 and 2018–2024)**
 
   - Built two ensembles (linear + tree) separately on a long window (2007–2024) and a short window (2018–2024). This is because several factors were not consistently available until ~2018, and I wanted to place more weight on learning the style of the “modern” market. Both windows use time-series validation.
   - Fused the two outputs with a higher weight on the short window; fusion weights are learned on a split validation set (e.g. 2023).
-  - Result: IC started to improve and the signals became more usable.
+  - Result: IC started to improve and the problem of unstable prediction remains.
 - **Version 2 — Decompose signals into Alpha / Risk / Regime (2 windows × 3 signals = 6  LightGBM sub-models) + strategy layer**
 
   - Replaced “one model does everything” with three dedicated signals:
